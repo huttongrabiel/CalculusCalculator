@@ -8,8 +8,14 @@ e, division, multiplication, integrals, multiple order derivatives
 etc.
 
 # Usage
-For now clone and compile with g++. I will create a make file
-in the next few days. 
+cd into CalculusCalculator/cpp then run
+```bash
+make
+```
+When finished:
+```bash
+make clean
+```
 
 # Design
 Each rule/type of problem should have its own file that will 
