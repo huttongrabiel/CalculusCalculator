@@ -1,3 +1,5 @@
+![newton and leibniz](https://d3idks24kkd2lv.cloudfront.net/wp-content/uploads/2016/12/who-invented-calculus_FeaturedThumb.jpg)
+
 # CalculusCalculator
 Going to try to build out a calculator for calculus problems. 
 Will start with basic derivatives (ie. exponent rule), then as I
