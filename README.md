@@ -1,3 +1,6 @@
+![warning](https://emojipedia-us.s3.dualstack.us-west-1.amazonaws.com/thumbs/120/apple/285/warning_26a0-fe0f.png) This code is calculator
+currently only supports the power rule. All problems that involve other steps will not work.
+
 ![newton and leibniz](https://d3idks24kkd2lv.cloudfront.net/wp-content/uploads/2016/12/who-invented-calculus_FeaturedThumb.jpg)
 
 # CalculusCalculator
