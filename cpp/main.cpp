@@ -29,4 +29,5 @@ int main() {
 //  }
 
   std::cout << "Equation: " << coefficient << "x^" << exponent << "\n";
+  powerRule(coefficient, exponent);
 }
