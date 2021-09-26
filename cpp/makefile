@@ -11,4 +11,4 @@ PowerRule.o: include.h
 DisplayAnswer.o: include.h
 
 clean:
-	rm *.o
+	rm *.o Calculate
