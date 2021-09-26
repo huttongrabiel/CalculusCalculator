@@ -1,5 +1,5 @@
-#ifndef INCLUDE_
-#define INCLUDE_
+#ifndef INCLUDE_H
+#define INCLUDE_H
 
 void powerRule(int, int);
 void displayAnswer(int, int);
