@@ -25,6 +25,8 @@ to enter again if they did not. I have tried a couple methods that
 did not work.
   * while (std::cin.fail())
   * while (typeid(coefficient/variable).name != "i")
+* Have DisplayAnswer() function lines scale with the line that changes
+ie. if line with numbers grows by 2, all other lines should grow by 2
 
 # Future Goals
 * GUI
