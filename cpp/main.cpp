@@ -11,7 +11,7 @@ int main() {
   std::cout << "Enter Your Equation On Next Line" << "\n";
   std::cout << "--------------------------------" << "\n";
 
-  std::cout << "Coefficient: ";
+  std::cout << "Coefficient (Enter 0 if no coefficient in equation): ";
   std::cin >> coefficient;
 
 //  while (typeid(coefficient).name() != "i") {
