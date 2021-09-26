@@ -20,6 +20,11 @@ take a while.
 # TODO
 * Exponent Rule
 * Basic set up and design
+* Figure out how to check if user did not input int and prompt them
+to enter again if they did not. I have tried a couple methods that 
+did not work.
+  * while (std::cin.fail())
+  * while (typeid(coefficient/variable).name != "i")
 
 # Future Goals
 * GUI
