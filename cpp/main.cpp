@@ -2,32 +2,45 @@
 #include <stdlib.h>
 #include "include.h"
 #include <typeinfo>
+#include <map>
+#include <functional>
 
 // Driver Code
 int main() {
   
-  int coefficient, exponent;
+  int user_function_decision;
+  
+  //Lets user pick rule because determing what rule to use is really hard, at least for now
+  std::cout << "Select a Currently Supported Calculation" << "\n";
+  std::cout << "----------------------------------------" << "\n";
+  std::cout << "1. Exponent Rule" << "\n";
+  std::cout << "2. Basic Six Trig Derivatives" << "\n";
+  std::cout << "\nEnter the Number for Your Calculation: ";
+  std::cin >> user_function_decision;
 
-  std::cout << "Enter Your Equation On Next Line" << "\n";
-  std::cout << "--------------------------------" << "\n";
-
-  std::cout << "Coefficient (Enter 0 if no coefficient in equation): ";
-  std::cin >> coefficient;
-
+  // Mapping our decisions for cleaner access
+  std::map<int, std::function<void()>> calculation_decision;
+  calculation_decision.insert(std::pair<int, std::function<void()>>(1, powerRule));
+  calculation_decision.insert(std::pair<int, std::function<void()>>(2, trigonometricDerivative));
+  
+  //Iterate through each key and match to equation
+  std::map<int, std::function<void()>>::iterator itr;
+  for (itr = calculation_decision.begin(); itr != calculation_decision.end(); itr++) {
+    if (itr->first == user_function_decision) {
+      itr->second();
+    }
+  }
+  
 //  while (typeid(coefficient).name() != "i") {
 //    std::cout << "ERROR: value entered must be of type int" << "\n";
 //    std::cout << "Coefficient: ";
 //    std::cin >> coefficient;
 //  }
-
-  std::cout << "Exponent: ";
-  std::cin >> exponent;
 //  while (typeid(coefficient).name() != "i") {
 //    std::cout << "ERROR: value entered must be of type int" << "\n";
 //    std::cout << "Exponent: ";
 //    std::cin >> exponent;
 //  }
 
-  std::cout << "Equation: " << coefficient << "x^" << exponent << "\n";
-  powerRule(coefficient, exponent);
+//  powerRule(coefficient, exponent);
 }
