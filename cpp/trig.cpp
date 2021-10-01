@@ -2,7 +2,7 @@
 #include "include.h"
 #include <map>
 
-void trigonometricDerviative() {
+void trigonometricDerivative() {
   std::map<std::string, std::string> trigDerivs;
 
   // Populating the map with values
