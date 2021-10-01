@@ -1,7 +1,7 @@
 #ifndef INCLUDE_H
 #define INCLUDE_H
 
-void powerRule(int, int);
+void powerRule();
 void displayAnswer(int, int);
 void trigonometricDerivative();
 
