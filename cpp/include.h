@@ -3,5 +3,6 @@
 
 void powerRule(int, int);
 void displayAnswer(int, int);
+void trigonometricDerivative(std::string);
 
 #endif
