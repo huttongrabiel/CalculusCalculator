@@ -1,7 +1,16 @@
 #include <iostream>
 #include "include.h"
 
-void powerRule(int coefficient, int exponent) {
+void powerRule() {
+  
+  int coefficient, exponent;
+
+  std::cout << "Coefficient (Enter 0 if no coefficient in equation): ";
+  std::cin >> coefficient;
+
+  std::cout << "Exponent: ";
+  std::cin >> exponent;
+
   coefficient *= exponent;
   exponent--;
   
