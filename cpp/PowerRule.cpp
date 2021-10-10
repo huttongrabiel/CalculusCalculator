@@ -25,4 +25,8 @@ void powerRule() {
 //  else {
 //    std::cout << "\n" << "Solution: " << coefficient << "x^" << exponent << "\n";
 //  }
-}  
+}
+
+void powerRule(int coefficient, int exponent) {
+  // If need to give data to powerrule instead of gather data from user, use this function
+}
