@@ -26,8 +26,6 @@ the kind of problem and what not. This is a bigger project that will
 take a while. 
 
 # TODO
-* Exponent Rule
-* Basic set up and design
 * Figure out how to check if user did not input int and prompt them
 to enter again if they did not. I have tried a couple methods that 
 did not work.
@@ -35,7 +33,9 @@ did not work.
   * while (typeid(coefficient/variable).name != "i")
 * Have DisplayAnswer() function lines scale with the line that changes
 ie. if line with numbers grows by 2, all other lines should grow by 2
-
+* Fix PowerRule function to take parameters if needed
+* Implement powerrule function into natural log function to solve derivative
+of U
 # Future Goals
 * GUI
 * Problem recognition to decide what to use
