@@ -1,13 +1,18 @@
 #include <iostream>
+#include "include.h"
 
-int main() { // only int main for now because i want to test before switching to normal function declaration
+void naturalLogOfU() {  
   // This function will calculate the deriviative of ln(u). d/dx ln(u) = 1/u du/dx
   
-  int u;
+  int uCoefficient, uExponent;
   std::cout << "The only U functions that are currently supported are exponent functions (ie. x^2, 2x^3)" << "\n";
-  std::cout << "Enter U function (ln(u)): ";
-  std::cin >> u;
-  std::cout << "Calculating: ln(" << u << ")" << "\n";
+  std::cout << "Enter U function coefficient (ie. 3): ";
+  std::cin >> uCoefficient;
+  std::cout << "Enter U function exponent (ie. 4): ";
+  std::cin >> uExponent;
+  std::cout << "Calculating: ln(" << uCoefficient << "x^" << uExponent << ")" << "\n";
   
-  std::cout << "1 / " << powerRule(u)
+  std::cout << "1 / " << uCoefficient << "x^" << uExponent << " * ";
+  powerRuleWithTwoParameters(uCoefficient, uExponent);
+  std::cout << "\n";
 }
