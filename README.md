@@ -33,9 +33,9 @@ did not work.
   * while (typeid(coefficient/variable).name != "i")
 * Have DisplayAnswer() function lines scale with the line that changes
 ie. if line with numbers grows by 2, all other lines should grow by 2
-* Fix PowerRule function to take parameters if needed
-* Implement powerrule function into natural log function to solve derivative
-of U
+* Change powerRuleWithTwoParameters to powerRule and have it be an 
+overload function with two parameters instead of none, cleaner this way
+
 # Future Goals
 * GUI
 * Problem recognition to decide what to use
