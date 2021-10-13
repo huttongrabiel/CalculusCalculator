@@ -27,6 +27,11 @@ void powerRule() {
 //  }
 }
 
-void powerRule(int coefficient, int exponent) {
+void powerRuleWithTwoParameters(int coefficient, int exponent) {
   // If need to give data to powerrule instead of gather data from user, use this function
+  
+  coefficient *= exponent;
+  exponent--;
+
+  std::cout << coefficient << "x^" << exponent;
 }
