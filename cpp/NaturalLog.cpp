@@ -13,6 +13,6 @@ void naturalLogOfU() {
   std::cout << "Calculating: ln(" << uCoefficient << "x^" << uExponent << ")" << "\n";
   
   std::cout << "1 / " << uCoefficient << "x^" << uExponent << " * ";
-  powerRuleWithTwoParameters(uCoefficient, uExponent);
+  twoParameterPowerRule(uCoefficient, uExponent);
   std::cout << "\n";
 }

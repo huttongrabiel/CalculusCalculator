@@ -27,7 +27,7 @@ void powerRule() {
 //  }
 }
 
-void powerRuleWithTwoParameters(int coefficient, int exponent) {
+void twoParameterPowerRule(int coefficient, int exponent) {
   // If need to give data to powerrule instead of gather data from user, use this function
   
   coefficient *= exponent;
