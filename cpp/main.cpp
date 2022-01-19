@@ -32,17 +32,4 @@ int main() {
       itr->second();
     }
   }
-  
-//  while (typeid(coefficient).name() != "i") {
-//    std::cout << "ERROR: value entered must be of type int" << "\n";
-//    std::cout << "Coefficient: ";
-//    std::cin >> coefficient;
-//  }
-//  while (typeid(coefficient).name() != "i") {
-//    std::cout << "ERROR: value entered must be of type int" << "\n";
-//    std::cout << "Exponent: ";
-//    std::cin >> exponent;
-//  }
-
-//  powerRule(coefficient, exponent);
 }
